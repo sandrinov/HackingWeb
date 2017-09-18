@@ -26,7 +26,7 @@ namespace BankingDifferent.Controllers
             return View(account);
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult Transfer(int destinationAccountId, int amount)
         {
             string username = User.Identity.Name;
