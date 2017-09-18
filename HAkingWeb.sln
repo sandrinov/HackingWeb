@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SQLInjection", "..\SQLInjection\", "{DCF765B1-BAD0-4C24-9E42-DE7B040FA197}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5198"
+		Debug.AspNetCompiler.PhysicalPath = "..\SQLInjection\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5198\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5198"
+		Release.AspNetCompiler.PhysicalPath = "..\SQLInjection\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5198\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5198"
+		SlnRelativePath = "..\SQLInjection\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "XSS(1)", "..\XSS\", "{776AEEAD-6969-4620-9448-70D137947B11}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1296"
+		Debug.AspNetCompiler.PhysicalPath = "..\XSS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1296\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1296"
+		Release.AspNetCompiler.PhysicalPath = "..\XSS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1296\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1296"
+		SlnRelativePath = "..\XSS\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Evilsite", "http://localhost/Evilsite", "{EF467D8C-3212-4CAF-B5EC-AC53D065E2F2}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Evilsite"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\..\inetpub\wwwroot\Evilsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Evilsite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Evilsite"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\..\inetpub\wwwroot\Evilsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Evilsite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\..\..\..\..\..\..\inetpub\wwwroot\Evilsite\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XSS_MVC", "XSS_MVC\XSS_MVC.csproj", "{24EA1A9A-3DA0-4472-8E0D-374756EEE23F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingDifferent", "BankingDifferent\BankingDifferent.csproj", "{9B8EDDF9-989A-4C6D-907C-1F3F85A73A25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCF765B1-BAD0-4C24-9E42-DE7B040FA197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF765B1-BAD0-4C24-9E42-DE7B040FA197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF765B1-BAD0-4C24-9E42-DE7B040FA197}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF765B1-BAD0-4C24-9E42-DE7B040FA197}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{776AEEAD-6969-4620-9448-70D137947B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776AEEAD-6969-4620-9448-70D137947B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776AEEAD-6969-4620-9448-70D137947B11}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{776AEEAD-6969-4620-9448-70D137947B11}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EF467D8C-3212-4CAF-B5EC-AC53D065E2F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF467D8C-3212-4CAF-B5EC-AC53D065E2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF467D8C-3212-4CAF-B5EC-AC53D065E2F2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF467D8C-3212-4CAF-B5EC-AC53D065E2F2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{24EA1A9A-3DA0-4472-8E0D-374756EEE23F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EA1A9A-3DA0-4472-8E0D-374756EEE23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EA1A9A-3DA0-4472-8E0D-374756EEE23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EA1A9A-3DA0-4472-8E0D-374756EEE23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8EDDF9-989A-4C6D-907C-1F3F85A73A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8EDDF9-989A-4C6D-907C-1F3F85A73A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8EDDF9-989A-4C6D-907C-1F3F85A73A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8EDDF9-989A-4C6D-907C-1F3F85A73A25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46297052-87A1-47C5-AE72-A03CBDA12F34}
+	EndGlobalSection
+EndGlobal

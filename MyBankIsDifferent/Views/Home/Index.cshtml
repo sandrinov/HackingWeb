@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@User.Identity.Name &#8217;s Account</h2>
+<p class="reminder">Demo Reminder: Check your email!</p>
+
+<fieldset>
+    <legend>Fields</legend>
+    <p>
+        Id:
+        <%: Model.IDAccount %>
+    </p>
+    <p>
+        <strong style="color:#000;">
+            Balance:
+            <%: Model.Balance.ToString("c") %>
+        </strong>
+    </p>
+    <p>
+        Username:
+        <%: Model.AccountOwner %>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Transfer Money</legend>
+    <% using (Html.BeginForm("Transfer", "Home")) { %>
+    <p>
+        <label for="Amount">Amount:</label>
+        <%: Html.TextBox("Amount")%>
+    </p>
+    <p>
+        <label for="destinationAccountId">Destination Account:</label>
+        <%: Html.DropDownList("destinationAccountId", "Select an Account") %>
+    </p>
+    <p>
+        <%-- <%= Html.AntiForgeryToken() %>--%>
+        <input type="submit" value="transfer" />
+    </p>
+    <% } %>
+</fieldset>
+
+<br />
+<hr />
+<a href="http://localhost:10647/05_CSRF/BadGuyCORS.html"> Please Help Me - Make a donation!</a>

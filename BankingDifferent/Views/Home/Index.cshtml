@@ -1,0 +1,47 @@
+﻿@model BankingDifferent.Models.Account
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@User.Identity.Name &#8217;s Account </h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <fieldset>
+            <legend>Fields</legend>
+            <p>
+                Id: @Model.IDAccount
+            </p>
+            <p>
+                <strong style="color:#000;">
+                    Balance: @Model.Balance.ToString("c")
+                </strong>
+            </p>
+            <p>
+                Username: @Model.AccountOwner
+            </p>
+        </fieldset>
+    </div>
+    <div class="col-md-6">
+        <fieldset>
+            <legend>Transfer Money</legend>
+            @using (Html.BeginForm("Transfer", "Home"))
+            {
+                @Html.AntiForgeryToken()
+                <div class="form-group">
+                    <label for="Amount"> Amount:</label>
+                    @Html.TextBox("Amount")
+                </div>
+                <div class="form-group">
+                    <label for="destinationAccountId"> Destination Account:</label>
+                    @Html.DropDownList("destinationAccountId", "Select an Account")
+                </div>
+                <input type="submit" value="transfer" />
+            }
+        </fieldset>
+    </div>
+</div>
+<br />
+<hr />
+@*<a href="http://localhost/Evilsite/BadGuyCORS.html"> Please Help Me - Make a donation!</a>*@
