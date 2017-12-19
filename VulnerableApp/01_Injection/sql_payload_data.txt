@@ -1,0 +1,40 @@
+﻿where CategoryID='1' union ALL select 0, INFORMATION_SCHEMA.TABLES.TABLE_NAME,
+        0,
+        0,
+        NULL,
+        NULL,
+        0,
+        0,
+        0,
+        NULL
+        FROM INFORMATION_SCHEMA.TABLES
+
+
+where CategoryID='1'
+        union ALL
+        select 0,
+        INFORMATION_SCHEMA.COLUMNS.COLUMN_NAME,
+        0,
+        0,
+        NULL,
+        NULL,
+        0,
+        0,
+        0,
+        NULL
+        FROM INFORMATION_SCHEMA.COLUMNS
+        where TABLE_NAME = 'Employees'
+
+
+union ALL
+select Employees.EmployeeID,
+       Employees.FirstName,
+       0,
+       0,
+       Employees.LastName,
+       NULL,
+       0,
+       0,
+       0,
+       NULL
+       FROM Employees

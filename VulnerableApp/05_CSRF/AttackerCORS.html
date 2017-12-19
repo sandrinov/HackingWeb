@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <script src="../scripts/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            //url: "http://localhost/WebSite/CorsEnabledService/api/UpdateStatus",
+            //START FROM HERE!
+            var status = "hacky hacky";
+
+            var dataIn = "\"" + status + "\"";
+            $.ajax({
+                url: "http://localhost:2918/Service1.svc/UpdateStatus",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                data: dataIn,
+                success: function (data) {
+                    //$('#txtStatusUpdate').val('');
+                    var now = getFormattedDate(new Date());
+                    //var username = $('#LoginName1').text();
+                    //$('#tblStatus > tbody:last').append('<tr><td>' + now + '</td><td>' + username + '</td><td>' + status + '</td></tr>');
+                    //$('#noUpdates').hide();
+                    //$('#yesUpdates').show();
+                },
+                error: function (error) {
+                    alert("Error: " + error.Error);
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    You've been CSRF'd!
+</body>
+</html>

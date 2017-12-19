@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingDifferent", "Banking
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evilsite", "Evilsite\Evilsite.csproj", "{3BEAA5FE-4D18-4174-A323-EB9B56A83CCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerableApp", "VulnerableApp\VulnerableApp.csproj", "{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3BEAA5FE-4D18-4174-A323-EB9B56A83CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BEAA5FE-4D18-4174-A323-EB9B56A83CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BEAA5FE-4D18-4174-A323-EB9B56A83CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

