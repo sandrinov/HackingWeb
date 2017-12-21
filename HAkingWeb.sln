@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evilsite", "Evilsite\Evilsi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerableApp", "VulnerableApp\VulnerableApp.csproj", "{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieLessApp", "CookieLessApp\CookieLessApp.csproj", "{D478D810-D47F-4498-A606-9FFA6AFE4F6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieLessAppWithAuth", "CookieLessAppWithAuth\CookieLessAppWithAuth.csproj", "{332CA0A6-1961-46A4-AF0B-19FFB560DE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsAuthentication", "WebFormsAuthentication\WebFormsAuthentication.csproj", "{A859EBA9-1A64-48A8-8C29-7DA6A484EDF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C91470D-7C5F-4119-86FE-B4F71B5A6ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D478D810-D47F-4498-A606-9FFA6AFE4F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D478D810-D47F-4498-A606-9FFA6AFE4F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D478D810-D47F-4498-A606-9FFA6AFE4F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D478D810-D47F-4498-A606-9FFA6AFE4F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332CA0A6-1961-46A4-AF0B-19FFB560DE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332CA0A6-1961-46A4-AF0B-19FFB560DE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332CA0A6-1961-46A4-AF0B-19FFB560DE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332CA0A6-1961-46A4-AF0B-19FFB560DE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A859EBA9-1A64-48A8-8C29-7DA6A484EDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A859EBA9-1A64-48A8-8C29-7DA6A484EDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A859EBA9-1A64-48A8-8C29-7DA6A484EDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A859EBA9-1A64-48A8-8C29-7DA6A484EDF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

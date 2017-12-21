@@ -58,24 +58,24 @@ namespace VulnerableApp
 
         //}
 
-        // PART 3 - Secure with indirect reference map
-        //public VulnerableApp.ORM.ServiceProduct GetProductDetails(Guid param)
-        //{
-        //    Product product = new Product() { ProductID = 0, ProductName = "You do not have succficient privileges to get details", QuantityPerUnit = "" };
-        //    if (CanCurrentUserAccessProductDetails())
-        //    {
-        //        // Add your operation implementation here
-        //        var productID = VulnerableApp.HelperClasses.IndirectReferenceMap.GetDirectReference(param);
-        //        var connString = WebConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString;
-        //        var dc = new NorthwindClassesDataContext(connString);
+       // PART 3 - Secure with indirect reference map
+        public VulnerableApp.ORM.ServiceProduct GetProductDetails(Guid param)
+        {
+            Product product = new Product() { ProductID = 0, ProductName = "You do not have succficient privileges to get details", QuantityPerUnit = "" };
+            if (CanCurrentUserAccessProductDetails())
+            {
+                // Add your operation implementation here
+                var productID = VulnerableApp.HelperClasses.IndirectReferenceMap.GetDirectReference(param);
+                var connString = WebConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString;
+                var dc = new NorthwindClassesDataContext(connString);
 
-        //        product = dc.Products.Where(p => p.ProductID == productID).FirstOrDefault();
+                product = dc.Products.Where(p => p.ProductID == productID).FirstOrDefault();
 
-        //    }
+            }
 
-        //    return new ServiceProduct(product);
+            return new ServiceProduct(product);
 
-        //}
+        }
 
 
         private bool CanCurrentUserAccessProductDetails()

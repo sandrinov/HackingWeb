@@ -81,7 +81,8 @@ namespace VulnerableApp.Injection
             var connString = WebConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString;
             var dc = new NorthwindClassesDataContext(connString);
             var catIDInt = Convert.ToInt16(catID);
-            grdProducts.DataSource = dc.Products.Where(p => p.CategoryID == catIDInt);
+            grdProducts.DataSource = 
+                dc.Products.Where(p => p.CategoryID == catIDInt);
             grdProducts.DataBind();
         }
 

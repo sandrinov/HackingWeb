@@ -28,7 +28,7 @@
             <legend>Transfer Money</legend>
             @using (Html.BeginForm("Transfer", "Home"))
             {
-                @*@Html.AntiForgeryToken()*@
+                @Html.AntiForgeryToken()
                 <div class="form-group">
                     <label for="Amount"> Amount:</label>
                     @Html.TextBox("Amount")
